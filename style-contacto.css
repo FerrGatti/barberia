@@ -1,0 +1,82 @@
+form{
+    margin: 3rem 15% 1rem 15%;
+    padding-top: 2rem;
+}
+form label{
+    display: block;
+}
+fieldset{
+    border: none;
+}
+.input-text, input legend{
+    display: block;
+    margin: 0.5rem;
+    width: 30rem;
+    height: 2rem;
+    transition: all 0.2s ease-in;
+}
+form input:hover::placeholder{
+    color: rgb(175,143,113);
+}
+form input:focus::placeholder{
+    color: black;
+    border-color: rgb(175,143,113);
+}
+input:focus{
+    outline: 0;
+    border-color: rgb(175,143,113);
+    background-color: black;
+    box-shadow: 1px 2px 5px black;
+    color: rgb(175,143,113);
+}
+.checkbox{
+    margin: 20px 0;
+}
+/* Estilo para boton enviar formulario */
+.btn{
+    background-color: rgb(175,143,113);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 3px 3px black;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.send{
+    width: 15rem;
+    height: 4rem;
+    transition: all 0.2s ease-in;
+
+}
+.send:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color: #b18155;
+}
+.send:focus{
+    transform: scale(1);
+    color: white;
+}
+/* Tabla */
+table{
+    width: 30%;
+    border-collapse: collapse;
+    border:1px solid black;
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 5rem;
+}
+table th{
+    background-color: rgb(175,143,113);
+}
+table td{
+    padding: 1rem;
+    border:1px solid black;
+}
+tr:nth-child(even){
+    background-color: rgb(204, 204, 204);
+}
+/* Seccion dia y horario */
+select{
+    margin: 0.5rem;
+}

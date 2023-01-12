@@ -1,0 +1,130 @@
+/* Animaciones */
+/* Animacion de header */
+@keyframes mov-menu {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+nav > ul{
+    position: relative;
+    animation: mov-menu 3s linear;
+}
+
+/* Gradiente de color en header */
+@keyframes gradiente {
+    from{
+        background-position: 0% 80%;
+    }
+    to{
+        background-position: 65% 0%;
+    }
+}
+
+/* Animacion subrayado header */
+/* Boton animado */
+.btn-animado{
+    all: unset;
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.btn-animado::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0.25rem;
+    background-color: whitesmoke;
+    transition: width .5s ease, left .5s ease, right .5s ease;
+    left: 50%;
+}
+.btn-animado:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+/* Animacion header fixed con scroll*/
+
+.header2{
+    position: sticky;
+    height: 100px;
+    top: 0;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(to right,rgb(175,143,113),rgb(211,190,165), rgb(211,190,165), white);
+    transition: position 0.5 linear;
+    opacity: 0.95;
+}
+.texto-titulo{
+    color: whitesmoke;
+    position: relative;
+    left: -20%;
+    top: 20%;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.texto-titulo2{
+    opacity: 1;
+    font-size: 1.5rem;
+}
+.header2 .logo{
+    height: 80px;
+    margin-left: 2rem;
+}
+.header2 nav{
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+}
+.btn-animado2{
+    all: unset;
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: 2rem;
+    cursor: pointer;
+    font-weight: bolder;
+    overflow: hidden;
+    font-size: 1rem;
+    padding: 1rem 1rem 0.3rem 1rem;
+    transition: all 2s ease;
+}
+.btn-animado2>.navegacion>a:link{
+    color: black;
+}
+.btn-animado2>.navegacion>a:visited{
+    color: black;
+}
+.btn-animado2>.navegacion>a:hover{
+    cursor: pointer;
+    color: whitesmoke;
+}
+.btn-animado2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0.25rem;
+    background-color: whitesmoke;
+    transition: width .5s ease, left .5s ease, right .5s ease;
+    left: 50%;
+}
+.btn-animado2:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+.menu2{
+    height: 80px;
+    list-style: none;
+    text-transform: uppercase;
+}
+

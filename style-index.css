@@ -1,0 +1,111 @@
+.info-page{
+    margin: 0 2rem 2rem 2rem;
+}
+.info-page h1{
+    margin-top: 0;
+    padding-top: 1rem;
+}
+article{
+    display: block;
+    position:relative;
+
+}
+.banner{
+    margin: 0;
+    width: 100%;
+    height: 25rem;
+    background-image: url(imagenes/bg-barber.jpg);
+    background-size: cover;
+    background-position: 10% 50%;
+    background-attachment: fixed;
+    text-align: center;
+}
+.banner h1{
+    color: whitesmoke;
+    position: relative;
+    margin: 0 0 5rem 5rem;
+    float: left;
+    font-size: 3rem;
+    top: 80%;
+}
+/* Info de pagina en main */
+.sobre-nosotros{
+    margin: 0 auto 5rem;
+    max-width: 60rem;
+    padding: 1rem;
+}
+.sobre-nosotros>p{
+    position: relative;
+    width: 90%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+.img-sn{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 10% 50%;
+    float: left;
+    shape-outside: circle();
+    padding: 1rem;
+}
+/*Ubicacion*/
+.ubicacion{
+    position: relative;
+    width: 80%;
+}
+/*Lista diferenciales*/
+.diferenciales{
+    margin-top: 10rem;
+}
+.titulo-principal{
+    opacity: 0;
+    transition: all 1s ease;
+}
+.contenidos-diferenciales{
+    width: 45rem;
+    margin:3rem auto 10rem auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    margin-right: 0.1rem;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5;
+    list-style-type: '★';
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.imagen-diferenciales{
+    width: 55%;
+    border-radius: 5rem;
+    box-shadow: 1rem 0.5rem 2rem 0.2rem black ;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+/*Animacion diferenciales*/
+@keyframes opacity-to-1 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.titulo-principal2{
+    opacity: 1;
+    animation: opacity-to-1 1s ease;
+}
+.lista-diferenciales2{
+    opacity: 1;
+    animation: opacity-to-1 1s ease;
+}
+.imagen-diferenciales2{
+    opacity: 1;
+    animation: opacity-to-1 1s ease;
+}

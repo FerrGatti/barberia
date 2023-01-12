@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="style-contacto.css">
+    <link rel="stylesheet" href="animaciones.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="header"><h1><img src="imagenes/logo-blanco.png" class="logo" alt="Logo titulo"></h1>
+        <nav>
+             <ul class="menu" id="menu">
+                 <button class="btn-animado" id="btn"><li class="navegacion"><a href="index.html" target="">Home</a></li></button>
+                 <button class="btn-animado" id="btn2"><li class="navegacion"><a href="products.html" target="">Products</a></li></button>
+                 <button class="btn-animado" id="btn3"><li class="navegacion"><a href="contacto.html" target="">Contact us</a></li></button>
+             </ul>
+         </nav>
+     </header>
+     <!-- Cuerpo de pagina -->
+     <main>
+        <form>
+            <label for="nombreyapellido">Nombre y apellido</label>
+            <input type="text" class="input-text" id="nombreyapellido" placeholder="Nombre y apellido" required>
+            
+            <label for="mail">Email</label>
+            <input type="email" class="input-text" id="mail" placeholder="mail@ejemplo.com" required>
+            
+            <label for="phone">Numero de telefono</label>
+            <input type="tel" class="input-text" id="phone" placeholder="(XXX) XXX XXXXXXX" required>
+            <input class="btn"type="submit">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="Mensaje" id="mensaje" cols="60" rows="10"></textarea>
+            
+            <fieldset> <!--Fieldsed se utiliza para agrupar cosas dentro del elemento que hagan referencia a lo mismo, reemplaza en este caso particular a un div-->
+
+                <legend><!--Legend puede ser utilizada como etiqueta para titulos dentro de un grupo de campos de formularios-->
+                    Como le gustaria que lo contactemos?
+                </legend>
+                <label for="radio-email"><input type="radio" value="email" id="radio-email">Email</label>
+                
+                <label for="radio-telefono"><input type="radio" value="telefono" id="radio-telefono">Telefono</label>
+                
+                <label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+            
+            </fieldset>
+            <fieldset>
+                <legend>En que dia quiere ser atendido?</legend>
+                <select name="dia-turno" id="dia-turno">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miercoes</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sabado">Sabado</option>
+                </select>
+                <legend>Elija su horario</legend>
+                <select name="horario-turno" id="horario-turno">
+                    <option value="10am">10am</option>
+                    <option value="11am">11am</option>
+                    <option value="12pm">12pm</option>
+                    <option value="13pm">13pm</option>
+                    <option value="14pm">14pm</option>
+                    <option value="15pm">15pm</option>
+                    <option value="16pm">16pm</option>
+                    <option value="17pm">17pm</option>
+                    <option value="18pm">18pm</option>
+                    <option value="19pm">19pm</option>
+                </select>
+            </fieldset>
+            <label class="checkbox" for=""><input type="checkbox" checked>Le gustaria recibir novedades?</label>
+            <input type="submit" class="btn send" value="Enviar formulario">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horarios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>10 a 19hs</td>
+                </tr>
+                <tr>
+                    <td>Sabados</td>
+                    <td>10 a 17hs</td>
+                </tr>
+                <tr>
+                    <td>Feriados</td>
+                    <td>10 a 15hs</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Cerrado</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+<footer>
+    <img src="imagenes/logo-blanco.png" alt="">
+    <p class="copyright">©Copyright Barberia Alura - 2022</p>
+</footer>
+</html>
