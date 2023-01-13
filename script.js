@@ -85,3 +85,28 @@ window.addEventListener('scroll', function(){
         }
     }
 })
+//
+//
+//Cambiar display de tabla en products
+//
+//
+function displayOn(){
+    document.getElementById('cabello').style.display = "block";
+}
+function displayOff(){
+    document.getElementById('cabello').style.display = "none";
+}
+function displayOn2(){
+    document.getElementById('barba').style.display = "block";
+}
+function displayOff2(){
+    document.getElementById('barba').style.display = "none";
+}
+function displayOn3(){
+    document.getElementById('merch').style.display = "block";
+}
+function displayOff3(){
+    document.getElementById('merch').style.display = "none";
+}
+
+

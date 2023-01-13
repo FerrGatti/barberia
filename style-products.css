@@ -5,6 +5,7 @@
     padding: 0;
     margin: 1rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 .box img{
     width: 100%;
@@ -40,15 +41,37 @@
     padding-top: 5%;
     padding-bottom: 5%;
 }
-.products>article{
+.box{
     transition: border-color 0.5s ease-in, box-shadow 0.5s ease-in, transform 0.5s ease-in;
 }
 /* Efecto al holdear los productos */
-.products>article:hover{
+.box:hover{
     box-shadow: 3px 3px 5px black;
     transform: scale(1.03);
     cursor: pointer;
 }
-.products>article:active{
+.box:active{
     filter:opacity(0.6);
+}
+/**/
+/*Tabla de productos**/
+/**/
+.products-seccion{
+    width: 20rem;
+    height: 20rem;
+    position:relative;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products-table{
+    position:absolute;
+    display: none;
+}
+.products-table table{
+    text-align: center;
+}
+.products-table td img{
+    width: 5rem;
+    height: 8rem;
 }

@@ -23,20 +23,79 @@
              </ul>
          </nav>
      </header>
-        <div class="products">
-            <article class="box cabello">
-                <img src="imagenes/corte-cabello.jpg" alt="">
-                <h4>Productos para el cabello</h4>
+        <section class="products">
+            <article class="box cabello" onclick="displayOn()">
+                    <img src="imagenes/corte-cabello.jpg" alt="">
+                    <h4>Productos para el cabello</h4>
             </article>
-            <article class="box barba">
+            <article class="box barba" onclick="displayOn2()">
                 <img src="imagenes/corte-barba2.jpg" alt="">
                 <h4>Productos para la barba</h4>
             </article>
-            <article class="box color">
+            <article class="box color" onclick="displayOn3()">
                 <img src="imagenes/merchandising.jpg" alt="">
                 <h4>Nuestro merchandising.</h4>
             </article>
-        </div>
+        </section>
+        <section class="products-seccion">
+            <article class="products-table cabello" id="cabello">
+                <p onclick="displayOff()" id="close" style="cursor:pointer;">X</p>
+                <table>
+                    <th>
+                        <tr>
+                            <td>Shampoo</td>
+                            <td>$2100</td>
+                        </tr>
+                        <tr>
+                            <td>Crema</td>
+                            <td>$1100</td>
+                        </tr>
+                        <tr>
+                            <td>$Cera</td>
+                            <td>$950</td>
+                        </tr>
+                    </th>
+                </table>
+            </article>
+            <article class="products-table barba" id="barba">
+                <p onclick="displayOff2()" id="close" style="cursor:pointer;">X</p>
+                <table>
+                    <th>
+                        <tr>
+                            <td>Cera capilar</td>
+                            <td>$700</td>
+                        </tr>
+                        <tr>
+                            <td>Oleo Barba</td>
+                            <td>$950</td>
+                        </tr>
+                        <tr>
+                            <td>Pomada para peinar</td>
+                            <td>$1500</td>
+                        </tr>
+                    </th>
+                </table>
+            </article>
+            <article class="products-table merch" id="merch">
+                <p onclick="displayOff3()" id="close" style="cursor:pointer;">X</p>
+                <table>
+                    <th>
+                        <tr>
+                            <td>Taza</td>
+                            <td>$700</td>
+                        </tr>
+                        <tr>
+                            <td>Remera</td>
+                            <td>$950</td>
+                        </tr>
+                        <tr>
+                            <td>Botella</td>
+                            <td>$1500</td>
+                        </tr>
+                    </th>
+                </table>
+            </article>
+        </section>
 
 
 
