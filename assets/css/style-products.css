@@ -25,7 +25,7 @@
     margin: 0;
 }
 .box h4{
-    color: white;
+    color: whitesmoke;
     top: -10rem;
     margin: 0;
     padding: 0;
@@ -33,6 +33,7 @@
     text-align: center;
     font-size: 1rem;
     padding-bottom: 1rem;
+    transition: all 1s ease;
 }
 .products{
     display: flex;
@@ -50,8 +51,25 @@
     transform: scale(1.03);
     cursor: pointer;
 }
+.box:hover h4{
+    color: black;
+}
 .box:active{
     filter:opacity(0.6);
+}
+.box h4::before{
+    content: "";
+    position: absolute;
+    bottom: 2.8rem;
+    width: 0;
+    height: 0.25rem;
+    background-color: black;
+    transition: width .5s ease, left .5s ease, right .5s ease;
+    left: 50%;
+}
+.box h4:hover::before{
+    width: 69%;
+    left: 14%;
 }
 /**/
 /*Tabla de productos**/
@@ -65,6 +83,7 @@
     margin-right: auto;
 }
 .products-table{
+    margin: 1rem black solid;
     position:absolute;
     display: none;
 }

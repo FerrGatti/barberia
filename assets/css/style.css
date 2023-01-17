@@ -4,7 +4,13 @@ html{
     font-size: 16px;
     background-image: linear-gradient(to bottom, white, whitesmoke, grey, black);
 }
-
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background: linear-gradient(to bottom, rgb(211,190,165),white, whitesmoke, grey);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(211,190,165);
+}
 *,*::after,
 *::before{
     box-sizing: inherit;
