@@ -80,3 +80,7 @@ tr:nth-child(even){
 select{
     margin: 0.5rem;
 }
+option{
+    color: whitesmoke;
+    background-color: rgb(175,143,113);
+}
